@@ -10,7 +10,7 @@ from FCN import FCN
 import cfg
 
 device = t.device('cuda') if t.cuda.is_available() else t.device('cpu')
-t.cuda.set_device('cuda:1')
+torch.cuda.set_device('cuda:1')
 
 BATCH_SIZE = 4
 miou_list = [0]
